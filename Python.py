@@ -28,7 +28,7 @@ def criar_menu():
     
     return sg.Window('Menu Principal', layout)
 
-# Função para criar o menu de CRUD
+# cria o menu de CRUD
 def criar_menu_crud(tabela):
     layout = [
         [sg.Text(f'Manipulando a tabela: {tabela}')],
@@ -41,7 +41,7 @@ def criar_menu_crud(tabela):
     
     return sg.Window(f'Menu CRUD - {tabela}', layout)
 
-# Função para criar a interface de seleção de visualização
+# cria a interface de seleção de visualização
 def criar_menu_selecao_visualizacao():
     layout = [
         [sg.Text('Escolha uma opção de visualização')],
@@ -52,7 +52,7 @@ def criar_menu_selecao_visualizacao():
     
     return sg.Window('Seleção de Visualização', layout)
 
-# Função para criar a interface de leitura
+# cria a interface de leitura
 def criar_menu_visualizar(tabela, colunas):
     layout = [
         [sg.Text(f'Selecione uma coluna para visualizar os dados ou veja todos os dados de {tabela}')],
@@ -64,7 +64,7 @@ def criar_menu_visualizar(tabela, colunas):
     
     return sg.Window(f'Visualizar - {tabela}', layout)
 
-# Função para exibir os dados
+# exibir os dados
 def exibir_dados(tabela, dados, id_selecionado=None):
     headings = [desc[0] for desc in dados.description]
     valores = [list(row) for row in dados.fetchall()]
@@ -76,7 +76,7 @@ def exibir_dados(tabela, dados, id_selecionado=None):
     
     return sg.Window(f'Dados - {tabela}', layout)
 
-# Função para criar a interface de atualização
+# cria a interface de atualização
 def criar_menu_atualizar(tabela, colunas):
     layout = [
         [sg.Text(f'Selecione uma coluna para atualizar os dados ou atualize todos os dados de {tabela}')],
@@ -219,7 +219,7 @@ def visualizar_registro(tabela):
                             window_dados = exibir_dados(tabela, dados, id_selecionado)
                             window_dados.read(close=True)
                             window_visualizar.un_hide()
-# Função para criar a interface de inserção
+# cria a interface de inserção
 def criar_menu_inserir(tabela, colunas):
     layout = [
         [sg.Text(f'Inserir dados na tabela: {tabela}')],
@@ -276,7 +276,7 @@ def deletar_registro(tabela, id_coluna, id_deletar):
         error, = e.args
         print(f"Erro ao deletar registro: {error.message}")
 
-# Atualizar a função main() para incluir a exclusão de dados
+# função main() para incluir a exclusão de dados
 def main():
     window = criar_menu()
     tabela_selecionada = None
