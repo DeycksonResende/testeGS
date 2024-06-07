@@ -1,0 +1,56 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  text-decoration: none;
+  margin-top: 3%;
+  height: 50%;
+}
+
+.navSpan {
+  font-size: 1em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  margin-left: 2%;
+}
+
+.navSpan:hover {
+  text-decoration: underline;
+  color: #00c3ff;
+}
+
+.navLogin {
+  border-right: 1px solid white; /* Adiciona uma borda à direita */
+  padding-right: 20px; /* Adiciona um espaçamento interno à direita */
+  margin-right: 20px; /* Adiciona uma margem à direita para separar */
+}
+
+.navLogin,
+.navRegister {
+  font-size: 1em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  text-decoration: none; /* Para remover o sublinhado padrão */
+  border-bottom: none !important; /* Remove a borda branca embaixo */
+}
+
+.navLogin:hover,
+.navRegister:hover {
+  text-decoration: underline;
+  color: #00c3ff;
+}
+
+.LinksAcess {
+  transform: translateX(-560%);
+  margin-left: 78%;
+}
+
+.LogoMarca {
+  width: 7%;
+  margin-right: 10%;
+}

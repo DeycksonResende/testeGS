@@ -1,0 +1,347 @@
+.Nav {
+  transform: translateY(10%) translateX(30%);
+}
+
+.backdrop {
+  overflow: hidden;
+  overflow-y: hidden;
+  margin-top: -2%;
+  margin-left: -0.6%;
+  padding: 0;
+  display: grid;
+  width: 178vh;
+  height: 102.7vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/image/FundoLogin4.jpg");
+}
+
+.Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 62%;
+  margin-top: 5%;
+  margin-left: 7.7%;
+  border-radius: 15px;
+}
+
+.Left {
+  width: 68%;
+  height: 100%;
+}
+
+.Capa {
+  filter: brightness(0.9);
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.ConteudoLeft {
+  transform: translateY(-115%);
+  margin-left: 8%;
+}
+
+.Right {
+  border-radius: 0px 25px 25px 0px;
+  width: 48%;
+  height: 100%;
+  background: radial-gradient(circle, rgb(0, 0, 0) 10%, #003cff65 100%);
+  /*   background: radial-gradient(circle, rgba(0, 195, 255, 0) 10%, #154cff31 100%);
+  background: radial-gradient(circle, rgb(0, 195, 255) 10%, #154cff73 100%);*/
+}
+
+.Form {
+  margin-left: 13%;
+  width: 70%;
+  height: 10%;
+  text-align: center;
+  padding: 2%;
+  height: 55vh;
+  margin-bottom: 9%;
+}
+
+.title {
+  width: 100%;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 600;
+  background-size: 400% 400%;
+  color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: Gradient 5s ease infinite;
+  font-size: 2.5em;
+  text-align: center;
+  transform: translateY(-30%);
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Restante {
+  margin-top: -5%;
+}
+
+.inputGroup {
+  display: flex;
+  position: relative;
+  margin: 28px 0;
+  border: solid 1px;
+  border-color: rgba(255, 255, 255, 0.363);
+  border-radius: 25px;
+  padding: 1.5%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 153, 255, 0.13) 0%,
+    #0000005d 40%
+  );
+}
+
+.icon {
+  transform: translateX(-30%) translateY(17%);
+  height: 30px;
+  width: 12%;
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 0.95em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+
+.inputGroup input:focus + label {
+  color: #0ef; /* Altera a cor do título quando o campo de entrada está focado */
+}
+
+.inputGroup input {
+  width: 320px;
+  height: 40px;
+  font-size: 0.95em;
+  color: rgb(255, 255, 255);
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+  color: #00000000;
+}
+
+.remember {
+  margin-bottom: 10px; /* Ajuste conforme necessário para mover para cima */
+}
+
+.remember label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remember label input[type="checkbox"] {
+  display: none;
+}
+
+.remember label .checkbox {
+  margin-left: 5%;
+  position: relative;
+  width: 12px; /* Largura da caixa */
+  height: 12px; /* Altura da caixa */
+  border: 2px solid #ffffff;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  cursor: pointer;
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  transform: translateX(20%);
+}
+
+.remember label .checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.remember label input[type="checkbox"]:checked + .checkbox:after {
+  display: block;
+}
+
+.remember label .checkbox:after {
+  width: 4px;
+  height: 8px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -1px; /* Ajusta a posição verticalmente */
+  margin-left: -0px; /* Ajusta a posição horizontalmente */
+}
+
+.remember label {
+  color: #ffffff;
+  font-size: 0.9em;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.label2 {
+  transform: translateX(70%);
+  cursor: pointer;
+}
+
+.label2:hover {
+  border-bottom: solid 1px #ffffff;
+}
+.Option {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  height: 43px;
+  background: radial-gradient(circle, rgb(0, 195, 255) 10%, #154cff73 100%);
+  color: #ffffff; /* Branco mais forte */
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  margin-top: 2%;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.Opções {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0%;
+  white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.RenomearSenha {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #00eeff;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-family: SF Pro Display;
+  cursor: pointer;
+}
+
+.signUpLink {
+  text-align: center;
+  margin: 5% 0;
+  border-top: solid 1px;
+  border-color: #ffffff;
+}
+
+.signUpLink p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.05em;
+}
+
+.signUpLink p a:hover {
+  text-decoration: underline;
+}
+
+.Account {
+  color: white;
+  font-size: 0.9em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 200;
+}
+
+.Register {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: 1%;
+  color: rgb(255, 255, 255);
+  text-decoration: none; /* Para remover o sublinhado padrão */
+}
+
+.Register:hover {
+  border-bottom: solid 1px #ffffff;
+}
+
+.LogoMarca {
+  width: 25%;
+  margin-top: 6%;
+}
+
+.Titulo {
+  color: white;
+  font-size: 2.5em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+}
+
+.Span2 {
+  color: aquamarine;
+}
+
+.Span {
+  color: rgb(78, 205, 255);
+}
+
+.Subtitulo {
+  color: white;
+  font-size: 1.6em;
+  width: 80%;
+  margin-top: -2%;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 200;
+}
+
+.Texto {
+  color: white;
+  font-size: 1em;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 200;
+  max-width: 85%;
+}
+
+.Logos{
+  margin-left: 2%;
+}
+
+.Logos:hover{
+  transform: scale(1.1);
+}
+
+.icon{
+  width: 12%
+ }

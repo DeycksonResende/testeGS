@@ -1,0 +1,51 @@
+.main {
+  background-image: url("/Image/CapaPrincipal.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+}
+
+.Capa {
+  filter: brightness(1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mn {
+  color: rgb(0, 119, 255);
+}
+
+.Nav {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 600;
+  color: white;
+  transform: translateY(80%);
+}
+
+.navSpan {
+  color: rgb(255, 0, 0);
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.navSpan:hover {
+  color: #00c3ff; /* Cor ao passar o mouse, se necessário */
+}
+
+.LinksAcess {
+  display: flex;
+  gap: 10px; /* Ajuste o espaçamento entre os links, se necessário */
+}
+
+.LogoMarca {
+  width: 10%;
+  margin-top: -1%;
+}
